@@ -1,0 +1,85 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block font %} <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"> {% endblock font %}
+{% block css %}
+<link rel="stylesheet" href='{% static "gymapp/css/base.css" %}' />
+<link rel="stylesheet" href='{% static "gymapp/css/about.css" %}' />  {% endblock css %} 
+{% block title %}about Us Page{% endblock title %} 
+{% block body %}
+<div class="container-fluid homePageIntro" id="homePageIntroAbout">
+    <h2>About Us</h2>
+</div>
+<div class="getTrainng">
+  
+  <div class="getTrainingText">
+    <br>
+    <h4>GET TRAINING TODAY</h4>
+    <br>
+    <p>Gimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard.</p>
+    
+    <button type="button" id="btn" class="btn btn-outline-secondary">Contact Now</button>
+    
+  </div>
+  <div class="image">
+    <img src='{% static "gymapp/img/train.png"%}' alt="trainerImage">
+  </div>
+</div>
+<div class="ExpertTrainers">
+  <h2>    Expert Trainers   </h2>
+  <div class="Trainers">
+    <div class="TrainerCard">
+      <img src='{% static "gymapp/img/trainSecond.png"%}' alt="trainerImage">
+      <div class="trainerCardDetail" onmouseover="expansion(this)" onmouseleave="contraction(this)" >
+        <!-- " -->
+        <h5>Dancer</h5>
+       
+        <p class="headng">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempore debitis quo, obcaecati provident necessitatibus?</p>
+        <p class="num">Phone Number: +91-9999999999</p>
+        <p class="num">Email: abc@gmail.com</p>
+        <button type="button" id="btn" class="btn btn-outline-secondary headng" onclick="phoneNumberShow()">Contact Now</button>
+      
+        
+      </div>
+      
+    </div>
+    <div class="TrainerCard">
+      <img src='{% static "gymapp/img/trainSecond.png"%}' alt="trainerImage">
+      <div class="trainerCardDetail" onmouseover="expansion(this)" onmouseleave="contraction(this)">
+        
+        <h5>Dancer</h5>
+       
+        <p class="headng">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempore debitis quo, obcaecati provident necessitatibus?</p>
+        <p class="num">Phone Number: +91-9999999999</p>
+        <p class="num">Email: abc@gmail.com</p>
+        <button type="button" id="btn" class="btn btn-outline-secondary headng" onclick="phoneNumberShow()">Contact Now</button>
+      
+        
+      </div>
+      
+    </div>
+    <div class="TrainerCard">
+      <img src='{% static "gymapp/img/trainSecond.png"%}' alt="trainerImage">
+      <div class="trainerCardDetail" onmouseover="expansion(this)" onmouseleave="contraction(this)">
+        
+        <h5>Dancer</h5>
+       
+        <p class="headng">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempore debitis quo, obcaecati provident necessitatibus?</p>
+        <p class="num">Phone Number: +91-9999999999</p>
+        <p class="num">Email: abc@gmail.com</p>
+        <button type="button" id="btn" class="btn btn-outline-secondary headng" onclick="phoneNumberShow()">Contact Now</button>
+      
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+ 
+</script>
+<script src='{% static "gymapp/js/about.js" %}'></script>
+
+{% endblock body %}
